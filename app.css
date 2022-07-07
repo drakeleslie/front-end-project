@@ -39,11 +39,14 @@ button {
   display: grid;
   max-height: 800px;
   max-width: 600px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.273);
   color: whitesmoke;
   opacity: 30%;
   justify-content: center;
   margin-left: 10px;
+  border-style: solid;
+  border-radius: 5%;
+  border-color: black;
 }
 .image-limit {
   height: 380px;
@@ -62,10 +65,12 @@ button {
   justify-content: center;
 }
 .bgBox {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.273);
   max-height: 400px;
   max-width: 300px;
-
+  border-style: solid;
+  border-radius: 5%;
+  border-color: black;
   justify-content: center;
   opacity: 30%;
   display: flex;
@@ -88,7 +93,7 @@ button {
   justify-content: center;
   align-items: center;
   border-radius: 35px;
-  border-bottom: 50px;
+  border-style: solid;
 }
 
 .btn,

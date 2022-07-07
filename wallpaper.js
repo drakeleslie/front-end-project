@@ -1,7 +1,7 @@
 let wallURL =
   "https://fast-dawn-89938.herokuapp.com/https://wallhaven.cc/api/v1/search?q=ghibli&categories=110&purity=100&atleast=1920x1080&ratios=landscape&sorting=relevance&order=desc&page=2";
 let body = document.body;
-console.log(body);
+
 let $wallChoice = $("#wall-choice");
 
 $.get(wallURL, (data) => {
@@ -18,7 +18,7 @@ $.get(wallURL, (data) => {
     event.preventDefault();
 
     let imgPlacePlus = result.data[(imageNum += 1)].path;
-    console.log(imgPlacePlus);
+
     body.style.backgroundImage = `url(${result.data[imageNum].path})`;
     body.style.backgroundSize = "cover";
   });
@@ -27,7 +27,7 @@ $.get(wallURL, (data) => {
     event.preventDefault();
 
     let imgPlaceMinus = result.data[(imageNum -= 1)].path;
-    console.log(imgPlaceMinus);
+
     body.style.backgroundImage = `url(${result.data[imageNum].path})`;
     body.style.backgroundSize = "cover";
   });
