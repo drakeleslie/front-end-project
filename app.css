@@ -6,7 +6,7 @@
 body {
   background-image: url("rain2.gif");
   background-size: cover;
-  background-color: antiquewhite;
+  background-color: black;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 5% 3fr 10%;
@@ -56,6 +56,20 @@ button {
   justify-content: center;
   position: relative;
 }
+.right-container {
+  display: grid;
+  grid-area: msc;
+  justify-content: center;
+}
+.bgBox {
+  background-color: black;
+  max-height: 400px;
+  max-width: 300px;
+
+  justify-content: center;
+  opacity: 30%;
+  display: flex;
+}
 
 .navbar,
 .container {
@@ -95,8 +109,8 @@ input {
 .container {
   height: 800px;
   display: grid;
-  grid-template-columns: repeat(50, 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  grid-template-columns: repeat(86, 1fr);
+  grid-template-rows: repeat(86, 1fr);
   gap: 1px;
   padding: 1px;
   background-color: whitesmoke;
@@ -144,7 +158,8 @@ input {
 .bg-resize {
   width: 802px;
   height: 802px;
-  opacity: 25%;
+  opacity: 100%;
+  background-color: black;
 }
 .bg-container {
   position: relative;
@@ -158,4 +173,14 @@ img {
 }
 .bright {
   opacity: 100%;
+}
+.wall-label {
+  color: white;
+}
+.white-text {
+  color: white;
+}
+.rain-img {
+  width: 90%;
+  margin-top: -40px;
 }

@@ -8,14 +8,15 @@ let navbar = document.querySelector(".navbar");
 let red = document.querySelector(".red");
 let green = document.querySelector(".green");
 let blue = document.querySelector(".blue");
+let picSelector = document.querySelector(".pic-selector");
+let bgBox = document.querySelector(".bgBox");
 
 let falsy = false;
 
-for (let i = 0; i < 2500; i++) {
+for (let i = 0; i < 7396; i++) {
   let pixel = document.createElement("div");
   pixel.classList.add("pixel");
 
-  //using mouseover > mouseenter because it has more of a hover effect.
   pixel.addEventListener("mouseover", () => {
     if (!falsy) {
       return;
@@ -29,12 +30,10 @@ for (let i = 0; i < 2500; i++) {
     pixel.classList.add("bright");
   });
 
-  //sets the current color to the previous color input
   color.addEventListener("click", () => {
     colorBucket.value = color.value;
   });
 
-  //resets the canvas to all white
   reset.addEventListener("click", () => {
     pixel.style.backgroundColor = "white";
   });
@@ -42,7 +41,6 @@ for (let i = 0; i < 2500; i++) {
   container.append(pixel);
 }
 
-//falsy work
 container.addEventListener("mousedown", () => {
   falsy = true;
 });
@@ -51,7 +49,6 @@ container.addEventListener("mouseup", () => {
   falsy = false;
 });
 
-//adds opacity class to the container and navbar
 opacityToggle.addEventListener("click", () => {
   container.classList.toggle("opacity");
   navbar.classList.toggle("opacity");
@@ -61,14 +58,16 @@ prevColor.addEventListener("click", () => {
   color.value = colorBucket.value;
 });
 
-// red.addEventListener("click", () => {
-//   color.value = "#ff0000";
-// });
+picSelector.addEventListener("mouseenter", () => {
+  picSelector.classList.add("opacity");
+});
+picSelector.addEventListener("mouseleave", () => {
+  picSelector.classList.remove("opacity");
+});
 
-// blue.addEventListener("click", () => {
-//   color.value = "#0000ff";
-// });
-
-// green.addEventListener("click", () => {
-//   color.value = "#00ff00";
-// });
+bgBox.addEventListener("mouseover", () => {
+  bgBox.classList.add("opacity");
+});
+bgBox.addEventListener("mouseleave", () => {
+  bgBox.classList.remove("opacity");
+});

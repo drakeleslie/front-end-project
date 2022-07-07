@@ -15,6 +15,10 @@ $userChoice.submit((event) => {
 
     let canvasBack = $(".bg-container");
     let infoBox = $(".image-container");
+    infoBox.on("mouseover", () => {
+      infoBox.addClass("opacity");
+    });
+
     let movieTitle = $(`<h2>${result.original_title_romanised}</h2>`).appendTo(
       infoBox
     );
