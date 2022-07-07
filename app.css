@@ -149,6 +149,8 @@ input {
 .bg-container {
   position: relative;
   margin-bottom: -802px;
+  width: 802px;
+  height: 802px;
   z-index: 1;
 }
 img {

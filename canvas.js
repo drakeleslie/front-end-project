@@ -61,14 +61,14 @@ prevColor.addEventListener("click", () => {
   color.value = colorBucket.value;
 });
 
-red.addEventListener("click", () => {
-  color.value = "#ff0000";
-});
+// red.addEventListener("click", () => {
+//   color.value = "#ff0000";
+// });
 
-blue.addEventListener("click", () => {
-  color.value = "#0000ff";
-});
+// blue.addEventListener("click", () => {
+//   color.value = "#0000ff";
+// });
 
-green.addEventListener("click", () => {
-  color.value = "#00ff00";
-});
+// green.addEventListener("click", () => {
+//   color.value = "#00ff00";
+// });
