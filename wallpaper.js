@@ -1,5 +1,5 @@
 let wallURL =
-  "https://fast-dawn-89938.herokuapp.com/https://wallhaven.cc/api/v1/search?q=ghibli&categories=110&purity=100&atleast=1920x1080&ratios=landscape&sorting=relevance&order=desc&page=2";
+  "https://cors-anywhere.herokuapp.com/https://wallhaven.cc/api/v1/search?q=ghibli&categories=110&purity=100&atleast=1920x1080&ratios=landscape&sorting=relevance&order=desc&page=2"; //https://fast-dawn-89938.herokuapp.com/
 let body = document.body;
 
 let $wallChoice = $("#wall-choice");
