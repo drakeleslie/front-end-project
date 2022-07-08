@@ -1,9 +1,12 @@
 let wallURL =
-  "https://cors-anywhere.herokuapp.com/https://wallhaven.cc/api/v1/search?q=ghibli&categories=110&purity=100&atleast=1920x1080&ratios=landscape&sorting=relevance&order=desc&page=2"; //https://fast-dawn-89938.herokuapp.com/
+  "https://cryptic-temple-75197.herokuapp.com/https://wallhaven.cc/api/v1/search?q=ghibli&categories=110&purity=100&atleast=1920x1080&ratios=landscape&sorting=relevance&order=desc&page=2";
+//option 1: https://fast-dawn-89938.herokuapp.com/
+//option 2: https://cryptic-temple-75197.herokuapp.com/
+//option 3: https://cors-anywhere.herokuapp.com/
 let body = document.body;
 
 let $wallChoice = $("#wall-choice");
-
+2;
 $.get(wallURL, (data) => {
   let result = data;
 
